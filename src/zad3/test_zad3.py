@@ -1,5 +1,5 @@
 import unittest
-from zad3 import Song
+from zad3.zad3 import Song
 
 class SongTest(unittest.TestCase):
     def setUp(self):
@@ -57,6 +57,3 @@ class SongTest(unittest.TestCase):
     
     def tearDown(self):
         self.temp = None
-
-if __name__ == '__main__':
-    unittest.main()

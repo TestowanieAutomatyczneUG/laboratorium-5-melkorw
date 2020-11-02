@@ -1,5 +1,5 @@
 import unittest
-from zad2 import Roman
+from zad2.zad2 import Roman
 
 class RomanNumeralsTest(unittest.TestCase):
     def setUp(self):

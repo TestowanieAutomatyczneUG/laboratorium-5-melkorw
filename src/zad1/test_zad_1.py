@@ -1,4 +1,4 @@
-from zad1 import Hamming
+from zad1.zad1 import Hamming
 import unittest
 
 class HammingTest(unittest.TestCase):
