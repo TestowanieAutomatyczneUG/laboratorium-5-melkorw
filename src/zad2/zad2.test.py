@@ -59,7 +59,6 @@ class RomanNumeralsTest(unittest.TestCase):
     def test_1000_is_a_single_m(self):
         self.assertEqual(self.temp.roman(1024), "MXXIV")
 
-    @unittest.skip("demonstrating skipping")
     def test_3000_is_three_m_s(self):
         self.assertEqual(self.temp.roman(3000), "MMM")
 
