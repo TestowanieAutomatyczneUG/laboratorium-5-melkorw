@@ -22,5 +22,5 @@ class Song:
     return self.song[num1-1:num2]
   
   def whole(self):
-    return []
+    return self.song
   
