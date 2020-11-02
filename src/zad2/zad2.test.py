@@ -56,7 +56,6 @@ class RomanNumeralsTest(unittest.TestCase):
     def test_900_being_1000_100_is_cm(self):
         self.assertEqual(self.temp.roman(911), "CMXI")
 
-    @unittest.skip("demonstrating skipping")
     def test_1000_is_a_single_m(self):
         self.assertEqual(self.temp.roman(1024), "MXXIV")
 
