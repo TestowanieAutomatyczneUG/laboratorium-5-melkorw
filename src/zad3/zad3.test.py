@@ -36,7 +36,6 @@ class SongTest(unittest.TestCase):
         with self.assertRaisesWithMessage(ValueError):
             self.temp.singleLine(-5)
 
-    @unittest.skip("demonstrating skipping")
     def test_disallow_negative_number_of_first_value(self):
         with self.assertRaisesWithMessage(ValueError):
             self.temp.between(-1,10)

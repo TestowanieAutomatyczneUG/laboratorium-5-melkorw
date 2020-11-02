@@ -11,6 +11,8 @@ class Song:
     return self.song[number - 1]
   
   def between(self, num1, num2):
+    if num1 <= 0:
+      raise ValueError('First value must be positive')
     if num1 == 2 and num2 == 5:
       return ['On the second day of Christmas my true love gave to me: two Turtle Doves, and a Partridge in a Pear Tree.', 'On the third day of Christmas my true love gave to me: three French Hens, two Turtle Doves, and a Partridge in a Pear Tree.', 'On the fourth day of Christmas my true love gave to me: four Calling Birds, three French Hens, two Turtle Doves, and a Partridge in a Pear Tree.', 'On the fifth day of Christmas my true love gave to me: five Gold Rings, four Calling Birds, three French Hens, two Turtle Doves, and a Partridge in a Pear Tree.']
     if num1 == 2 and num2 == 2:
