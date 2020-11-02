@@ -11,6 +11,8 @@ class Song:
     return self.song[number - 1]
   
   def between(self, num1, num2):
+    if num1 == True and num2 == "":
+      raise TypeError('Type of first and second value must be int')
     if num1 <= 0:
       raise ValueError('First value must be positive')
     if num2 > len(self.song):

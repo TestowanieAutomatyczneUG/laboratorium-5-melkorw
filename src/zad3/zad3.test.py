@@ -52,7 +52,6 @@ class SongTest(unittest.TestCase):
         with self.assertRaisesWithMessage(TypeError):
             self.temp.singleLine(False)
 
-    @unittest.skip("demonstrating skipping")
     def test_disallow_type_other_than_int_in_between_method(self):
         with self.assertRaisesWithMessage(TypeError):
             self.temp.between(True, "")
