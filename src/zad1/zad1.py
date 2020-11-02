@@ -1,5 +1,8 @@
 class Hamming():
     def distance(self, first, second):
+        if len(first) > len(second):
+            raise ValueError('First cannot be longer than second')
+
         if len(first) == len(second) and first == second:
             return 0
 
@@ -11,5 +14,5 @@ class Hamming():
             return wyn
 
 
+
 hamming  = Hamming()
-print(hamming.distance('', ''))
