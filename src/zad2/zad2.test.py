@@ -2,9 +2,9 @@ import unittest
 from zad2 import Roman
 
 class RomanNumeralsTest(unittest.TestCase):
-  def setUp(self):
+    def setUp(self):
         self.temp = Roman()
-        
+
     def test_1_is_a_single_i(self):
         self.assertEqual(self.temp.roman(1), "I")
 
