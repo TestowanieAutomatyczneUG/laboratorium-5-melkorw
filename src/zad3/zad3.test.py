@@ -35,7 +35,6 @@ class SongTest(unittest.TestCase):
         with self.assertRaisesWithMessage(ValueError):
             self.temp.singleLine(20)
 
-    @unittest.skip("demonstrating skipping")
     def test_disallow_negative_number_of_line(self):
         with self.assertRaisesWithMessage(ValueError):
             self.temp.singleLine(-5)

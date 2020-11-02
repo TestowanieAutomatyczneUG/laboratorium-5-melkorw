@@ -6,6 +6,8 @@ class Song:
   def singleLine(self, number):
     if number > len(self.song):
       raise ValueError('Number cannot be bigger than length of song')
+    if number <= 0:
+      raise ValueError('Number must be positive')
     if number == 1:
       return 'On the first day of Christmas my true love gave to me: a Partridge in a Pear Tree.'
     return ''
