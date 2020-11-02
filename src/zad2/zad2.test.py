@@ -29,7 +29,6 @@ class RomanNumeralsTest(unittest.TestCase):
     def test_20_is_two_x_s(self):
         self.assertEqual(self.temp.roman(27), "XXVII")
 
-    @unittest.skip("demonstrating skipping")
     def test_48_is_not_50_2_but_rather_40_8(self):
         self.assertEqual(self.temp.roman(48), "XLVIII")
 
