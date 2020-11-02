@@ -13,7 +13,6 @@ class HammingTest(unittest.TestCase):
     def assertRaisesWithMessage(self, exception):
         return self.assertRaisesRegex(exception, r".+")
 
-    @unittest.skip("demonstrating skipping")
     def test_empty_strands(self):
         self.assertEqual(self.temp.distance("", ""), 0)
 
