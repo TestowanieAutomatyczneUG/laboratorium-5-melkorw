@@ -17,33 +17,42 @@ class HammingTest(unittest.TestCase):
     def assertRaisesWithMessage(self, exception):
         return self.assertRaisesRegex(exception, r".+")
 
+    @unittest.skip("demonstrating skipping")
     def test_empty_strands(self):
         self.assertEqual(self.temp.distance("", ""), 0)
 
+    @unittest.skip("demonstrating skipping")
     def test_single_letter_identical_strands(self):
         self.assertEqual(self.temp.distance("A", "A"), 0)
 
+    @unittest.skip("demonstrating skipping")
     def test_single_letter_different_strands(self):
         self.assertEqual(self.temp.distance("G", "T"), 1)
 
+    @unittest.skip("demonstrating skipping")
     def test_long_identical_strands(self):
         self.assertEqual(self.temp.distance("GGACTGAAATCTG", "GGACTGAAATCTG"), 0)
 
+    @unittest.skip("demonstrating skipping")
     def test_long_different_strands(self):
         self.assertEqual(self.temp.distance("GGACGGATTCTG", "AGGACGGATTCT"), 9)
 
+    @unittest.skip("demonstrating skipping")
     def test_disallow_first_strand_longer(self):
         with self.assertRaisesWithMessage(ValueError):
             self.temp.distance("AATG", "AAA")
 
+    @unittest.skip("demonstrating skipping")
     def test_disallow_second_strand_longer(self):
         with self.assertRaisesWithMessage(ValueError):
             self.temp.distance("ATA", "AGTG")
 
+    @unittest.skip("demonstrating skipping")
     def test_disallow_left_empty_strand(self):
         with self.assertRaisesWithMessage(ValueError):
             self.temp.distance("", "G")
 
+    @unittest.skip("demonstrating skipping")
     def test_disallow_right_empty_strand(self):
         with self.assertRaisesWithMessage(ValueError):
             self.temp.distance("G", "")
