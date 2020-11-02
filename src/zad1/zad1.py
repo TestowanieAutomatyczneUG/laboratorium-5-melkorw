@@ -6,6 +6,9 @@ class Hamming():
         if len(first) == 0 and len(second) > 0:
             raise ValueError('First cannot be empty if second is not')
 
+        if len(first) > 0 and len(second)  == 0:
+            raise ValueError('Second cannot be empty if first is not')
+
         if len(first) == len(second) and first == second:
             return 0
 
