@@ -4,6 +4,9 @@ class Hamming():
             return 0
         if len(first) == 1 and len(second) == 1 and first == second:
             return 0
+        if len(first) == 1 and len(second) == 1 and first != second:
+            return 1
+
 
 
 hamming  = Hamming()
