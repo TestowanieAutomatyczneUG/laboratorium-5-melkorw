@@ -11,7 +11,6 @@ class RomanNumeralsTest(unittest.TestCase):
     def test_2_is_two_i_s(self):
         self.assertEqual(self.temp.roman(2), "II")
 
-    @unittest.skip("demonstrating skipping")
     def test_3_is_three_i_s(self):
         self.assertEqual(self.temp.roman(3), "III")
 
