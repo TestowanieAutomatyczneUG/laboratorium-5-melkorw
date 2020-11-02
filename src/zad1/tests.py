@@ -1,9 +1,5 @@
+from zad1 import Hamming
 import unittest
-
-class Hamming():
-    def distance(first, second):
-        return ''
-
 
 class HammingTest(unittest.TestCase):
     # Utility functions
