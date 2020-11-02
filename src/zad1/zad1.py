@@ -2,6 +2,9 @@ class Hamming():
     def distance(self, first, second):
         if len(first) != len(second):
             raise ValueError('Values can\'t be different length')
+            
+        if len(first) == 0 and len(second) > 0:
+            raise ValueError('First cannot be empty if second is not')
 
         if len(first) == len(second) and first == second:
             return 0
