@@ -15,7 +15,6 @@ class SongTest(unittest.TestCase):
     def test_single_line_print(self):
         self.assertEqual(self.temp.singleLine(1), 'On the first day of Christmas my true love gave to me: a Partridge in a Pear Tree.')
 
-    @unittest.skip("demonstrating skipping")
     def test_multiple_lines_2_and_5_print(self):
         self.assertEqual(self.temp.between(2,5), ['On the second day of Christmas my true love gave to me: two Turtle Doves, and a Partridge in a Pear Tree.', 'On the third day of Christmas my true love gave to me: three French Hens, two Turtle Doves, and a Partridge in a Pear Tree.', 'On the fourth day of Christmas my true love gave to me: four Calling Birds, three French Hens, two Turtle Doves, and a Partridge in a Pear Tree.', 'On the fifth day of Christmas my true love gave to me: five Gold Rings, four Calling Birds, three French Hens, two Turtle Doves, and a Partridge in a Pear Tree.'])
 
