@@ -5,5 +5,5 @@ class Hamming():
         wyn = 0
         for i in range(0, len(first)):
             if first[i] != second[i]:
-                wyn += 1
+                wyn += 2
         return wyn
