@@ -1,4 +1,6 @@
-# A sample Python project
+# Aleksander Wardyn project
+
+![Python package](https://github.com/TestowanieAutomatyczneUG/laboratorium-5-melkorw/workflows/Python%20package/badge.svg?branch=master)
 
 ![Python Logo](https://www.python.org/static/community_logos/python-logo.png "Sample inline image")
 
